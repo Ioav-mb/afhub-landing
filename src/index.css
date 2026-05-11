@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 213 100% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 100% 10%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 40%;
+    --accent: 210 20% 96%;
+    --accent-foreground: 213 100% 10%;
+    --border: 213 20% 88%;
+    --ring: 36 78% 45%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-ink bg-white antialiased;
+  }
+  /* Sticky navbar is h-20 (5rem) — offset anchor targets so titles aren't covered. */
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+  #inicio {
+    scroll-margin-top: 0;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  ::selection {
+    background: rgba(201, 148, 26, 0.25);
+    color: #001b35;
+  }
+
+  /* Strip MapLibre's default popup chrome so the mapcn MarkerPopup contents own the look. */
+  .maplibregl-popup-content {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+  .maplibregl-popup-tip {
+    display: none !important;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-container px-5 md:px-10 lg:px-16;
+  }
+
+  .eyebrow {
+    @apply text-[11px] md:text-xs font-semibold uppercase tracking-[0.3em] text-gold;
+  }
+
+  .heading-display {
+    @apply font-serif font-medium leading-[1.05] tracking-tight text-navy;
+  }
+
+  .heading-section {
+    @apply font-serif font-medium leading-[1.1] tracking-tight text-navy text-[34px] md:text-5xl;
+  }
+
+  .body-lg {
+    @apply text-base md:text-lg leading-relaxed text-ink/75 font-light;
+  }
+
+  .gold-divider {
+    @apply block h-px w-16 bg-gold;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-8 py-3.5 text-[11px] md:text-xs font-semibold uppercase tracking-[0.25em] transition-all duration-300 active:scale-[0.98];
+  }
+  .btn-primary {
+    @apply btn bg-gold text-navy hover:bg-gold-dark;
+  }
+  .btn-secondary {
+    @apply btn border border-white/40 text-white bg-white/5 backdrop-blur-sm hover:bg-white hover:text-navy;
+  }
+  .btn-outline-navy {
+    @apply btn border border-navy text-navy hover:bg-navy hover:text-white;
+  }
+  .btn-solid-navy {
+    @apply btn bg-navy text-white hover:bg-gold hover:text-navy;
+  }
+
+  .bracket-frame {
+    position: relative;
+  }
+  .bracket-frame::before,
+  .bracket-frame::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-color: #c9941a;
+    border-style: solid;
+  }
+  .bracket-frame::before {
+    top: 0;
+    left: 0;
+    border-width: 1px 0 0 1px;
+  }
+  .bracket-frame::after {
+    bottom: 0;
+    right: 0;
+    border-width: 0 1px 1px 0;
+  }
+}

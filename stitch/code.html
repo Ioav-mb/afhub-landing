@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AF | HUB DE NEGOCIOS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "brand-navy": "#001b35",
+                        "brand-gold": "#c5a059",
+                        "brand-gold-dark": "#a38448",
+                        "surface": "#f9f9ff",
+                        "on-surface": "#111c2c",
+                        "primary": "#001b35",
+                        "secondary": "#c5a059",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                    },
+                    "fontFamily": {
+                        "headline": ["Libre Caslon Text", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .bracket-decor::before { content: "["; margin-right: 6px; color: #c5a059; font-weight: 300; }
+        .bracket-decor::after { content: "]"; margin-left: 6px; color: #c5a059; font-weight: 300; }
+        
+        .nav-link-active {
+            color: #c5a059;
+            position: relative;
+        }
+        .nav-link-active::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #c5a059;
+        }
+        
+        .divider-gold {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #c5a059 50%, transparent);
+            width: 80px;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(0, 27, 53, 0.85) 0%, rgba(0, 27, 53, 0.4) 100%);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-overlay {
+                background: rgba(0, 27, 53, 0.75);
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-brand-gold/30 selection:text-brand-navy">
+<!-- Navbar -->
+<nav class="sticky top-0 z-50 bg-brand-navy border-b border-brand-gold/10 h-20">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-full">
+<a class="font-headline text-2xl font-bold tracking-tight text-brand-gold" href="#">
+            AF <span class="text-white/40 font-light mx-2">|</span> <span class="text-xs uppercase tracking-[0.3em] font-body font-semibold align-middle">Hub de Negocios</span>
+</a>
+<div class="hidden md:flex items-center gap-10">
+<a class="nav-link-active text-[13px] uppercase tracking-widest font-semibold" href="#inicio">Inicio</a>
+<a class="text-white/70 hover:text-brand-gold transition-colors text-[13px] uppercase tracking-widest font-semibold" href="#nosotros">Nosotros</a>
+<a class="text-white/70 hover:text-brand-gold transition-colors text-[13px] uppercase tracking-widest font-semibold" href="#unidades">Unidades</a>
+<a class="text-white/70 hover:text-brand-gold transition-colors text-[13px] uppercase tracking-widest font-semibold" href="#valores">Valores</a>
+<a class="text-white/70 hover:text-brand-gold transition-colors text-[13px] uppercase tracking-widest font-semibold" href="#ubicacion">Ubicación</a>
+</div>
+<button class="bg-brand-gold text-brand-navy px-8 py-2.5 text-[12px] uppercase tracking-[0.15em] font-bold hover:bg-white transition-all active:scale-95 shadow-lg">
+            Contactar
+        </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-[85vh] flex items-center overflow-hidden bg-brand-navy" id="inicio">
+<div class="absolute inset-0 z-0">
+<img alt="Corporate Plaza" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida/ADBb0ui0Coym4gRKPMV5sR4q8KVCbJ-_EjIe4muCZYAzdPsbrc3sl-adloDfB8qPjK6q6cxDpISITJUfpudv8yH4Faru8DBk0x9fUPuAQ4jPv5PwNZ5-sj72aFow9gc8HP4NfCOfTLtTazqlniSB82Ra5GEHLKWIvQH9Y9ZWSNMUiFkIFyKCU4dwkU9pc96bUt0rvq8EMg_u6vY1An8d1dfESjY3k6Lg5tAS8TYd3lk2C2MvMH-dE0zSKpMe9J0cA5QjijpQjvU4BU4MUA"/>
+<div class="absolute inset-0 hero-overlay"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="max-w-2xl">
+<span class="font-body text-[13px] text-brand-gold uppercase tracking-[0.4em] mb-6 block font-bold">Ecosistema Empresarial</span>
+<h1 class="font-headline text-5xl md:text-7xl text-white mb-8 leading-[1.1]">
+                AF <span class="font-light italic">Hub de Negocios</span>
+</h1>
+<p class="font-headline text-2xl text-white/90 mb-10 italic border-l-2 border-brand-gold pl-6 leading-relaxed">
+                “Conectamos negocios, potenciamos experiencias.”
+            </p>
+<div class="flex flex-col sm:flex-row gap-5">
+<button class="px-10 py-4 bg-brand-gold text-brand-navy font-bold text-xs uppercase tracking-widest hover:bg-white transition-all shadow-xl">
+                    Hablar con un asesor
+                </button>
+<button class="px-10 py-4 border border-white/30 text-white font-bold text-xs uppercase tracking-widest bg-white/5 backdrop-blur-sm hover:bg-white hover:text-brand-navy transition-all">
+                    Explorar Unidades
+                </button>
+</div>
+</div>
+</div>
+</header>
+<!-- About Section -->
+<section class="py-32 bg-white overflow-hidden" id="nosotros">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+<div class="space-y-10 order-2 lg:order-1">
+<div class="space-y-6">
+<span class="font-body text-xs text-brand-gold bracket-decor uppercase tracking-[0.3em] font-bold">Trayectoria &amp; Visión</span>
+<h2 class="font-headline text-4xl md:text-5xl text-brand-navy leading-tight">¿Quiénes somos?</h2>
+<p class="font-headline text-xl text-brand-navy/60 italic">El nuevo punto de convergencia en Asunción.</p>
+</div>
+<div class="w-20 h-0.5 bg-brand-gold"></div>
+<div class="space-y-6">
+<p class="text-lg text-on-surface/80 leading-relaxed font-light">
+                    AF | HUB de Negocios es un ecosistema de marcas líderes que convergen bajo una misma visión de excelencia. 
+                </p>
+<p class="text-lg text-on-surface/80 leading-relaxed font-light">
+                    Reunimos unidades estratégicas en sectores de servicios, bienestar, conveniencia y educación, diseñadas para elevar el estándar de vida corporativo y personal en el corazón de la capital.
+                </p>
+</div>
+</div>
+<div class="relative order-1 lg:order-2">
+<div class="absolute -inset-4 border border-brand-gold/20 translate-x-4 translate-y-4"></div>
+<img alt="AF Corporate Campus" class="relative z-10 w-full aspect-[4/3] object-cover shadow-2xl" src="https://lh3.googleusercontent.com/aida/ADBb0uiH62rK_9mMVGwhxdJYCY695N5-PjotdZZLtmmq3nhDX58v7KWbci9TpvcUJ8zlh-KV6xMtfh0VoxglIOh4idBWJrddK_PCOFDnpxByQNIUY3sJbDHeAPWKmfhkabfpKbdyKKT6HkQmGnIatyI1V1CAsQuOD-Qe56VxNZ_aun6RgTW-DPalg8_CG7vLnWmqOQgNciigNGx3Owf1X5iko3Xt8kWd6ejLgdQGXZAORaSN2ftzON6FX__U86tKi-Pbsiq4kNtOGIQ6"/>
+</div>
+</div>
+</section>
+<!-- Business Units Section -->
+<section class="py-32 bg-slate-50 border-y border-slate-200" id="unidades">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-20 space-y-4">
+<h2 class="font-headline text-4xl md:text-5xl text-brand-navy">Nuestras Unidades</h2>
+<div class="divider-gold mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+<!-- AF Fleet -->
+<div class="bg-white p-8 text-center border border-slate-200 hover:border-brand-gold transition-all group flex flex-col items-center">
+<div class="w-20 h-20 mb-8 p-2 group-hover:scale-110 transition-transform duration-500">
+<img alt="Fleet" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujPj8r18xwOBTBugaKXiF3lFnwI9PohMoRCNLjChLjieZPgTd8MuKUeyLWVOHu9Ek3wNDfU11cFM-JQZvZkT_Z7aZ2vVPOhw6X3RLEK_Qx9efMEfJ5MYOsF8wi8TbbmeBcz4BRUWg_le1_fimIPsQjCmUskdjVUSca9EGKDO-4OG81cH3Uc6E9psehybTKAUccnB3iXlPWSIz-RXq0nH572JQmaaorX9gg2hYPoW408_Tfo3DrAQ1N1-r0RXUXKSAtQ30a8Co78xg"/>
+</div>
+<h3 class="font-headline text-lg text-brand-navy mb-4 uppercase tracking-widest font-bold">AF FLEET</h3>
+<p class="text-sm text-on-surface/60 leading-relaxed">Soluciones premium de movilidad y gestión de flota vehicular.</p>
+</div>
+<!-- AF Gym -->
+<div class="bg-white p-8 text-center border border-slate-200 hover:border-brand-gold transition-all group flex flex-col items-center">
+<div class="w-20 h-20 mb-8 p-2 group-hover:scale-110 transition-transform duration-500">
+<img alt="Gym" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhNp8qeCcPlvWBB_6xnQTTUaJRUXRI_iqEtKT2albMdKSam6qhXuAo0tGDR3f2lMepyw-K6Nl3cgvc7qExJpQqwU0ncsCRRXJL6yGFssBGTD-LBkM2Jop7S39k9kq_dqzn7yBuf6tFDWr3yR3TLlKkRSsFoMhFD2E-4MpmVfKP5Ubbo8KIKwvZurG0xmVrahJxGpHPEsXFgMpjkkkFlO6F_TfrpSGplQAS525yr9zIqQtQbKc6kJ3E2BzOBaPBsUfU93PGE_uBZ"/>
+</div>
+<h3 class="font-headline text-lg text-brand-navy mb-4 uppercase tracking-widest font-bold">AF GYM</h3>
+<p class="text-sm text-on-surface/60 leading-relaxed">Entrenamiento funcional de alto rendimiento y bienestar integral.</p>
+</div>
+<!-- AF Fit -->
+<div class="bg-white p-8 text-center border border-slate-200 hover:border-brand-gold transition-all group flex flex-col items-center">
+<div class="w-20 h-20 mb-8 p-2 group-hover:scale-110 transition-transform duration-500">
+<img alt="Fit" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhSLItAUAIQmw3ZUeifTR8tcevdxFu4oPCQc_O4j4TJZJ0s5w3ECOVOd0M6nhhNAwMP_TfEIj_e7aZcdo-vtLPKLnAb8gAV4-nYv91dFCAFrLsppqdBQC64T72DL_bkBwpucy8dAceHsq7qjlWgwoYcNkkYOaxLM-qupTkHE92XW-W0hJr_P_SgF-So1bWQ44bPKsvchnbKl2IpAJppwsYKAB8TZAGofZSaQlZ3rGE8FtL-uQ2QroxXqXpEbBxz2k9F_OuX0LYb"/>
+</div>
+<h3 class="font-headline text-lg text-brand-navy mb-4 uppercase tracking-widest font-bold">AF FIT</h3>
+<p class="text-sm text-on-surface/60 leading-relaxed">Gastronomía saludable diseñada para un estilo de vida activo.</p>
+</div>
+<!-- AF Market -->
+<div class="bg-white p-8 text-center border border-slate-200 hover:border-brand-gold transition-all group flex flex-col items-center">
+<div class="w-20 h-20 mb-8 p-2 group-hover:scale-110 transition-transform duration-500">
+<img alt="Market" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugUO9epBudVWQNzlJnAN8vSRxGObcgYQnrhF6TwKN2o13agLXs-r9D7GdIYFVYaBvl4Iyfyp7YCvAXXGhgQ003-ySjM9J_XXBJVM-dZkapIYVNegRwapcaytAbUFfgIXjJmgyym8gbzUtmhWzXf4chVcvO01ive3S94M-U2bpDwCmV0WOyYOo0_NiESWvMLUCth8907FjTzHMjh8RBTFgrMNcp72vdxTXj7J0wuZ_78xQLTS4nYZPJy63y1q2Ot3gxFV0Ivp23tHg"/>
+</div>
+<h3 class="font-headline text-lg text-brand-navy mb-4 uppercase tracking-widest font-bold">AF MARKET</h3>
+<p class="text-sm text-on-surface/60 leading-relaxed">Selección curada de productos y conveniencia diaria superior.</p>
+</div>
+<!-- Litabelli -->
+<div class="bg-white p-8 text-center border border-slate-200 hover:border-brand-gold transition-all group flex flex-col items-center">
+<div class="w-20 h-20 mb-8 p-2 group-hover:scale-110 transition-transform duration-500">
+<img alt="Litabelli" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ug1Ltt5TjQyXbg1B3f2BhKHKVmqsyncarTFOoMcTV2LXM-DW_EaGuU_sIv3-PZK7_IBZAFA76EcIthNkw5wR31rK-cgCyo8p_JTWV0b8QYifKoeC-A7-LKKxzOo-RW2PWwsg_UwQ8WsbH7rMsPCLcwCNYoXem1JJcS-P779qQQP8w9dNTnfxc8IuUwae1a__fF0upPdNBA5wcQnfc4FnDuBsBDH99xMPlceLqUWzUP3PmOnNhzlEbHnpVNWUjfFcaFVorKmKTb4hg"/>
+</div>
+<h3 class="font-headline text-lg text-brand-navy mb-4 uppercase tracking-widest font-bold">LITABELLI</h3>
+<p class="text-sm text-on-surface/60 leading-relaxed">Espacios educativos disruptivos para el aprendizaje lúdico.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="py-24 bg-brand-navy text-white" id="valores">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-y-16 gap-x-8 text-center">
+<div class="space-y-6 group">
+<div class="w-16 h-16 bg-white/5 border border-white/10 flex items-center justify-center mx-auto group-hover:bg-brand-gold group-hover:border-brand-gold transition-all duration-300">
+<span class="material-symbols-outlined text-brand-gold group-hover:text-brand-navy text-3xl" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<div class="space-y-2">
+<h4 class="font-headline text-xl tracking-wide">Comunidad</h4>
+<p class="text-xs uppercase tracking-widest text-white/40">Conexiones Reales</p>
+</div>
+</div>
+<div class="space-y-6 group">
+<div class="w-16 h-16 bg-white/5 border border-white/10 flex items-center justify-center mx-auto group-hover:bg-brand-gold group-hover:border-brand-gold transition-all duration-300">
+<span class="material-symbols-outlined text-brand-gold group-hover:text-brand-navy text-3xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="space-y-2">
+<h4 class="font-headline text-xl tracking-wide">Calidad</h4>
+<p class="text-xs uppercase tracking-widest text-white/40">Sin Concesiones</p>
+</div>
+</div>
+<div class="space-y-6 group">
+<div class="w-16 h-16 bg-white/5 border border-white/10 flex items-center justify-center mx-auto group-hover:bg-brand-gold group-hover:border-brand-gold transition-all duration-300">
+<span class="material-symbols-outlined text-brand-gold group-hover:text-brand-navy text-3xl" style="font-variation-settings: 'FILL' 1;">handshake</span>
+</div>
+<div class="space-y-2">
+<h4 class="font-headline text-xl tracking-wide">Confianza</h4>
+<p class="text-xs uppercase tracking-widest text-white/40">Transparencia Total</p>
+</div>
+</div>
+<div class="space-y-6 group">
+<div class="w-16 h-16 bg-white/5 border border-white/10 flex items-center justify-center mx-auto group-hover:bg-brand-gold group-hover:border-brand-gold transition-all duration-300">
+<span class="material-symbols-outlined text-brand-gold group-hover:text-brand-navy text-3xl" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+</div>
+<div class="space-y-2">
+<h4 class="font-headline text-xl tracking-wide">Crecimiento</h4>
+<p class="text-xs uppercase tracking-widest text-white/40">Evolución Continua</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-32 bg-white" id="ubicacion">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative group">
+<div class="absolute -inset-2 bg-brand-navy/5 -rotate-1 group-hover:rotate-0 transition-transform duration-500"></div>
+<img alt="Map" class="relative z-10 w-full aspect-[4/3] object-cover border border-slate-200 shadow-xl" src="https://lh3.googleusercontent.com/aida/ADBb0uhIGhxLjZ6vxbLyejOieNlAEl02LQbPHXKSTNkD6PmZAghCv9hIsI8fed3tKpm4XSITQyat8ZogKk7WpGsPqbyiQg7qbdQ_qKyGNoaq6iOQRSB0qItiPoVpNy-Yw3HB0qFoenaNdxHoO2RK6U7DJTj8XhN7dBN5gRgdMKWS8aDAZDkjDWoVDiWH5mnL67rxuEmazLqjiggmfDjUP23scaSdBo4ytMksVRwEs_ZJMd0vjNYjKvQ15eFxrg2hN17aVnEAnkmcCMt62w"/>
+</div>
+<div class="space-y-10 lg:pl-10">
+<div class="space-y-4">
+<span class="text-xs font-bold text-brand-gold uppercase tracking-[0.3em]">Visítanos</span>
+<h2 class="font-headline text-4xl md:text-5xl text-brand-navy">En el corazón estratégico de Asunción</h2>
+</div>
+<div class="space-y-8 py-4">
+<div class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded-full bg-brand-navy/5 flex items-center justify-center group-hover:bg-brand-navy transition-colors">
+<span class="material-symbols-outlined text-brand-navy group-hover:text-white" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div>
+<p class="text-xs uppercase tracking-widest text-on-surface/40 font-bold mb-1">Dirección</p>
+<p class="text-lg font-medium text-brand-navy leading-tight">Eligio Ayala c/ Brasil, 1079 — Asunción, PY.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded-full bg-brand-navy/5 flex items-center justify-center group-hover:bg-brand-navy transition-colors">
+<span class="material-symbols-outlined text-brand-navy group-hover:text-white" style="font-variation-settings: 'FILL' 1;">phone_iphone</span>
+</div>
+<div>
+<p class="text-xs uppercase tracking-widest text-on-surface/40 font-bold mb-1">Atención</p>
+<p class="text-lg font-medium text-brand-navy leading-tight">0983 030 330 <span class="text-sm font-normal text-on-surface/50 ml-2">(Lunes a Viernes)</span></p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex-1 bg-brand-navy text-white py-4 px-8 text-center text-xs font-bold uppercase tracking-widest hover:bg-brand-gold hover:text-brand-navy transition-all shadow-lg" href="#">
+                    Cómo llegar
+                </a>
+<a class="flex-1 border border-brand-navy text-brand-navy py-4 px-8 text-center text-xs font-bold uppercase tracking-widest hover:bg-slate-50 transition-all" href="tel:0983030330">
+                    Llamar ahora
+                </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="relative min-h-[60vh] flex items-center py-24 bg-brand-navy">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<img alt="Corporate" class="w-full h-full object-cover opacity-40 scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ugCVAIJjeiU3qtZxg18JtArK1PQ_m8LRYZyxgB-dG7YhBCSsfZWXpCqFDrEb-AFNLgwaW57qkTUqhGr-3c7VaxxQ7yhNb-UHNwkIsVtObH3p_AvNos-SjpJ51PH_ho0theC8iro-K-qL0Z4bWEEw07td6Yjyhh5J-TEGVXWY9CStFhjIxzsbPemiJTivaZczLysK_aenTVoIi0tIalVuIri4AjhvARyff8CF01wg1k3VCXvRLYfuJspKteLsCC9LrddC9py66zO2w"/>
+<div class="absolute inset-0 bg-brand-navy/60"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="max-w-xl">
+<h2 class="font-headline text-4xl md:text-6xl text-white mb-8 leading-tight">
+                Conectemos negocios.<br/>
+<span class="text-brand-gold italic">Potenciemos experiencias.</span>
+</h2>
+<p class="text-lg text-white/70 mb-12 leading-relaxed max-w-md">
+                Únete al ecosistema donde el éxito se comparte y la calidad es el estándar. Tu marca merece estar aquí.
+            </p>
+<button class="px-12 py-5 bg-brand-gold text-brand-navy font-bold text-xs uppercase tracking-[0.2em] hover:bg-white transition-all shadow-2xl active:scale-95">
+                Contactar ahora
+            </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-brand-navy text-white pt-24 pb-12 border-t border-white/5">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 mb-24">
+<div class="lg:col-span-5 space-y-10">
+<a class="font-headline text-2xl font-bold tracking-tight text-brand-gold" href="#">
+                    AF <span class="text-white/40 font-light mx-2">|</span> <span class="text-xs uppercase tracking-[0.3em] font-body font-semibold align-middle">Hub de Negocios</span>
+</a>
+<p class="text-white/50 leading-relaxed italic max-w-md">
+                    Un ecosistema corporativo diseñado para elevar los estándares de servicio y potenciar el crecimiento de marcas líderes en Paraguay.
+                </p>
+<div class="flex gap-6">
+<a class="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-navy hover:border-brand-gold transition-all" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-navy hover:border-brand-gold transition-all" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg>
+</a>
+<a class="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-navy hover:border-brand-gold transition-all" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a class="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-navy hover:border-brand-gold transition-all" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.301-.15-1.779-.879-2.053-.979-.275-.1-.475-.149-.675.15s-.776.979-.951 1.178c-.175.199-.351.224-.651.075s-1.267-.467-2.414-1.49c-.893-.795-1.495-1.778-1.67-2.078s-.019-.462.13-.611c.134-.133.301-.351.451-.525.15-.173.2-.299.301-.498s.05-.374-.025-.525c-.075-.15-.675-1.623-.925-2.224-.244-.587-.491-.508-.675-.518-.174-.01-.374-.012-.574-.012-.2 0-.525.075-.799.374-.275.299-1.049 1.026-1.049 2.5s1.074 2.9 1.224 3.1c.15.199 2.113 3.227 5.118 4.524.715.308 1.272.492 1.707.63.718.228 1.371.196 1.887.119.574-.085 1.779-.726 2.029-1.427.25-.7.25-1.301.175-1.427-.075-.126-.275-.201-.575-.351z"></path></svg>
+</a>
+</div>
+</div>
+<div class="lg:col-span-2 lg:col-start-8 space-y-8">
+<h5 class="text-xs font-bold uppercase tracking-[0.3em] text-brand-gold">Navegación</h5>
+<ul class="space-y-4">
+<li><a class="text-white/60 hover:text-brand-gold transition-colors text-sm" href="#inicio">Inicio</a></li>
+<li><a class="text-white/60 hover:text-brand-gold transition-colors text-sm" href="#nosotros">Nosotros</a></li>
+<li><a class="text-white/60 hover:text-brand-gold transition-colors text-sm" href="#unidades">Unidades</a></li>
+<li><a class="text-white/60 hover:text-brand-gold transition-colors text-sm" href="#valores">Valores</a></li>
+</ul>
+</div>
+<div class="lg:col-span-3 space-y-8">
+<h5 class="text-xs font-bold uppercase tracking-[0.3em] text-brand-gold">Contacto</h5>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-brand-gold text-lg">mail</span>
+<a class="text-white/60 hover:text-brand-gold text-sm transition-colors" href="mailto:info@afhub.com.py">info@afhub.com.py</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-brand-gold text-lg">phone_iphone</span>
+<a class="text-white/60 hover:text-brand-gold text-sm transition-colors" href="tel:0983030330">0983 030 330</a>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-[10px] uppercase tracking-[0.5em] text-white/20">Asunción • Paraguay • 2024</p>
+<p class="text-[10px] uppercase tracking-[0.2em] text-white/20">AF Hub de Negocios — Todos los derechos reservados</p>
+</div>
+</div>
+</footer>
+</body></html>
