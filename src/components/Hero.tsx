@@ -42,7 +42,7 @@ export default function Hero() {
             className="heading-display text-white text-[44px] sm:text-6xl md:text-7xl"
           >
             AF <span className="text-gold">|</span>{" "}
-            <span className="italic font-light">Hub de Negocios</span>
+            <span className="font-light">Hub de Negocios</span>
           </motion.h1>
 
           <motion.p
