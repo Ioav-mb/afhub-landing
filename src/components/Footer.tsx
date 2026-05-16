@@ -17,7 +17,7 @@ const unitsLinks = [
 const socials = [
   {
     label: "Instagram",
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/afhubdenegocios?igsh=dHhrY2U5cW43b2Mw",
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
         <path d="M12 2.2c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.64.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.67 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.21 15.58 2.2 15.21 2.2 12s.01-3.58.07-4.85C2.42 3.92 3.94 2.38 7.15 2.27 8.42 2.21 8.8 2.2 12 2.2zm0 1.8c-3.16 0-3.5.01-4.74.07-2.33.11-3.42 1.21-3.53 3.53C3.68 8.5 3.67 8.84 3.67 12c0 3.16.01 3.5.07 4.74.11 2.32 1.2 3.42 3.53 3.53C8.5 20.33 8.84 20.34 12 20.34c3.16 0 3.5-.01 4.74-.07 2.33-.11 3.42-1.21 3.53-3.53.06-1.24.07-1.58.07-4.74 0-3.16-.01-3.5-.07-4.74-.11-2.32-1.2-3.42-3.53-3.53C15.5 4.01 15.16 4 12 4zm0 3.05a4.95 4.95 0 1 1 0 9.9 4.95 4.95 0 0 1 0-9.9zm0 8.17a3.22 3.22 0 1 0 0-6.44 3.22 3.22 0 0 0 0 6.44zm5.18-8.39a1.16 1.16 0 1 1 0 2.32 1.16 1.16 0 0 1 0-2.32z" />
@@ -26,7 +26,7 @@ const socials = [
   },
   {
     label: "Facebook",
-    href: "https://facebook.com",
+    href: "https://www.facebook.com/share/18sqPjVTBc/?mibextid=wwXIfr",
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
         <path d="M22.68 0H1.32C.59 0 0 .59 0 1.32v21.36C0 23.41.59 24 1.32 24h11.5v-9.29H9.69V11.1h3.13V8.41c0-3.1 1.89-4.79 4.66-4.79 1.32 0 2.46.1 2.79.14v3.24l-1.92.001c-1.5 0-1.79.72-1.79 1.76v2.31h3.58l-.47 3.62h-3.11V24h6.11c.73 0 1.32-.59 1.32-1.32V1.32C24 .59 23.41 0 22.68 0z" />
@@ -44,7 +44,7 @@ const socials = [
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/company/af-hub-de-negocios/",
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
         <path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM8 19H5V8h3v11zM6.5 6.73a1.76 1.76 0 1 1 0-3.52 1.76 1.76 0 0 1 0 3.52zM20 19h-3v-5.6c0-3.37-4-3.11-4 0V19h-3V8h3v1.77c1.4-2.59 7-2.78 7 2.47V19z" />
